@@ -57,3 +57,22 @@ Auto_Trading=0
 You manually open trades based on dashboard signals
 Good for learning or discretionary trading
 KINGWISE V3 FINAL MT5 ANY BROKER | Broker:Deriv.com Acc:52012345 Server:Deriv-Real Bal:$500.00 Connected:YES AUTO EXECUTION 24H | FRVP:Y VWAP:Y SMC:Y EMA:Y RSI:Y ATR:Y KALMAN:Y SUPER:Y STOCH:Y DMI/ADX:Y CRT:Y ICT:Y EQH/L:Y PATTERNS:Y GANN:Y FIB:Y RR>=1.0 TP>=300=30pips | Long:ON Short:ON Lot:0.01 TP:300 Trades/Sig:1 Style:KINGWISE_ULTIMATE EXIT Opp:Y MTF M5/M15/H1/H4 Charts:XAUUSD,US100,US30,Boom 50,Vol 75...
+git clone https://github.com/levyarty35/Derive-all-charts-scanner-v9.git
+cd Derive-all-charts-scanner-v9
+
+# Copy ALL from /mnt/data/:
+# - All KINGWISE_*.mq5 files (V1, V2, V2.2, V3 FINAL, Bridge)
+# - All *.set files (V1, V2, V2.2, V3)
+# - All *.pine files (TradingView if you want all 3 platforms)
+# - README.md (V3 FINAL covers all 3)
+
+mkdir -p MQL5/Experts MQL5/Presets TradingView
+
+cp /mnt/data/KINGWISE_*.mq5 MQL5/Experts/
+cp /mnt/data/KINGWISE_*.set MQL5/Presets/
+cp /mnt/data/KINGWISE_*.pine TradingView/ 2>/dev/null || true
+cp /mnt/data/README.md ./README.md
+
+git add .
+git commit -m "ADD ALL 3 VERSIONS - V1 Super Perfect V10 0.01 lot 30pips + V2 All Features FRVP VWAPS SMC EMA RSI etc + V3 FINAL MT5 ONLY ANY BROKER ANY ACCOUNT Manual Auto + TradingView Pine + Sets - All features TP30pips+ RR1:1+ Exit Opposite"
+git push origin main
