@@ -59,3 +59,14 @@ Good for learning or discretionary trading
 KINGWISE V3 FINAL MT5 ANY BROKER | Broker:Deriv.com Acc:52012345 Server:Deriv-Real Bal:$500.00 Connected:YES AUTO EXECUTION 24H | FRVP:Y VWAP:Y SMC:Y EMA:Y RSI:Y ATR:Y KALMAN:Y SUPER:Y STOCH:Y DMI/ADX:Y CRT:Y ICT:Y EQH/L:Y PATTERNS:Y GANN:Y FIB:Y RR>=1.0 TP>=300=30pips | Long:ON Short:ON Lot:0.01 TP:300 Trades/Sig:1 Style:KINGWISE_ULTIMATE EXIT Opp:Y MTF M5/M15/H1/H4 Charts:XAUUSD,US100,US30,Boom 50,Vol 75...
 git clone https://github.com/levyarty35/Derive-all-charts-scanner-v9.git
 cd Derive-all-charts-scanner-v9
+KINGWISE ELITE V4 MARTINGALE 0.01->0.02->0.04
+Symbol: Volatility 10 Index TF:M1 Lot:0.01 Base:0.01
+Martingale: ON Lvl 0 Mult 2.0 MaxLot 0.04
+TP:100 pts SL:50 pts
+Min Score:90% | Max Pos:2 | TradesToday:0/100
+AutoLot: ON Risk 10% GrowsWithBal YES
+Daily: Loss 30% Profit UNLIMITED EquityDD 20%
+CloseOnNextSignal: YES | Consec L:0
+Balance:10.00 Equity:10.00
+Status: WAITING SCORE 85% < 90%
+KINGWISE ELITE ACTIVE - 90% SCORE MODE
